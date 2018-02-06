@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>在线便签</title>
+  <link rel="stylesheet" type="text/css" href="/iconfont/iconfont.css">
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+  <div class="mask"></div>
+  <div class="layout">
+    <div class="header">
+      <% if (isLogin){ %>
+        <div class="login" style="background-color:#15D1E8;">
+          <img src="<%= user.avatar %>" alt="">
+          <span title="<%= user.username %>">
+            <%= user.username %>
+          </span>
+          <span> | </span>
+          <a href="/auth/logout">
+            <span class="log-off">注销</span>
+          </a>
+        </div>
+        <%} else { %>
+          <div class="login">
+            <a href="/auth/github">
+              <span class="iconfont icon-GitHub"></span>
+              <span> GitHub登录</span>
+            </a>
+          </div>
+          <% } %>
+            <div class="logo-ct">
+              <span class="logo">Daskys</span>
+              <span class="logo-font"> 在线便签</span>
+            </div>
+            <ul class="tap">
+              <li class="whole selected">全部</li>
+              <li class="completed">已完成</li>
+              <li class="order-ct">
+                <span class="order">正序
+                  <span class="iconfont icon-reverse"></span>
+                </span>
+                <span class="reverse">倒序
+                  <span class="iconfont icon-order"></span>
+                </span>
+              </li>
+            </ul>
+    </div>
+  </div>
+  <div class="content">
+
+  </div>
+  <div class="content-complete"></div>
+  <div class="top">
+    <span class="iconfont icon-top"></span>
+  </div>
+  <div class="add">
+    <span class="iconfont icon-add"></span>
+  </div>
+  <div class="notice">
+    <span>已删除</span>
+  </div>
+  <div class="new-note">
+    <span class="close iconfont icon-delete"></span>
+    <h3>添加新便签</h3>
+    <textarea class="note-text" name="" id="" cols="46" rows="15" placeholder="输入内容"></textarea>
+    <div class="level clearfix">
+      <p class="grade">重要星级：&nbsp;&nbsp;</p>
+      <ul class="alter clearfix">
+        <li class="degree star iconfont icon-score"></li>
+        <li class="degree iconfont icon-score"></li>
+        <li class="degree iconfont icon-score"></li>
+        <li class="degree iconfont icon-score"></li>
+        <li class="degree iconfont icon-score"></li>
+      </ul>
+    </div>
+    <span class="added">添加</span>
+  </div>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

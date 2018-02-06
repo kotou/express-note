@@ -1,0 +1,83 @@
+    .new-note,
+    .modify-note {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 1px solid #E8E8E8;
+        border-radius: 3px;
+        padding: 25px 15px;
+        padding-top: 12px;
+        text-align: center;
+    }
+
+    .new-note {
+        z-index: 2;
+        display: none;
+    }
+
+    .new-note h3,
+    .modify-note h3 {
+        padding-bottom: 10px;
+        color: #666666;
+    }
+
+    .close {
+        float: right;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+
+    .close:hover {
+        opacity: 0.8;
+    }
+
+    .added,
+    .edit {
+        display: inline-block;
+        height: 28px;
+        line-height: 29px;
+        background-color: #00D3AA;
+        font-size: 12px;
+        padding-left: 48px;
+        padding-right: 48px;
+        border: 1px none;
+        border-radius: 15px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .modify-note {
+        z-index: 3;
+    }
+
+    .note-text,
+    .note-edit {
+        outline: none;
+        resize: none;
+        word-break: break-all;
+        padding: 15px;
+        border: 1px solid #E8E8E8;
+        border-radius: 3px;
+        background-color: #F5F5F5;
+        height: 250px;
+        width: 370px;
+        font-family: "Source Han Sans";
+        font-size: 15px;
+    }
+
+    .grade {
+        float: left;
+        font-weight: bold;
+        color: #373737;
+    }
+
+    .alter,
+    .change {
+        color: #DBDBDB;
+    }
+
+    .degree {
+        cursor: pointer;
+    }
