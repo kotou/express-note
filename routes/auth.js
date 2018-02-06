@@ -12,9 +12,9 @@ passport.deserializeUser(function (obj, done) {
 });
 
 passport.use(new GitHubStrategy({
-    clientID: 'b94c08d04e35feaaa8ea',
-    clientSecret: 'd5276ac95f4433021f07db36840e49239900ac11',
-    callbackURL: "http://localhost:6060/auth/github/callback"
+    clientID: '7e5bda72418c51bf3765',
+    clientSecret: '97177aca4f7ec20252b5c5658eefc8cb51ec5a65',
+    callbackURL: "http://katoumegumi.xyz/auth/github/callback"
 },
 function (accessToken, refreshToken, profile, done) {
         done(null, profile);
