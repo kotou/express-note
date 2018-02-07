@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "set PORT=6060 && node ./bin/www",
+    "start": "node ./bin/www",
     "webpack": "webpack --config=src/webpack.config.js",
     "watch": "onchange \"src/**/*.js\" \"src/**/*.less\" -- npm run webpack"
   },
