@@ -4,6 +4,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+}
 body {
   font: 14px/1.6 'Times New Roman', 'Droid Sans';
   background-color: #F7F7F7;
@@ -25,6 +28,7 @@ li {
   position: relative;
   width: 640px;
   margin: 0 auto;
+  background-color: #fff;
 }
 .content {
   position: relative;
